@@ -1,2 +1,18 @@
 @import "reset.scss";
 @import "vars.scss";
+
+
+#root {
+  display: none;
+}
+#not-mobile-alert {
+  display: block;
+}
+@media screen and ($mobile) {
+  #root {
+    display: block;
+  }
+  #not-mobile-alert {
+    display: none;
+  }
+}

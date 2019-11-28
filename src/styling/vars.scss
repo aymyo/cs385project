@@ -1,6 +1,12 @@
 
-$primaryColor: palegreen;
-$secondaryColor: #c4c4c4;
+/* RGB */
+$yellow: rgba(244, 230, 132, 1);
+$aquamarine: rgba(118, 243, 165, 1);
+$lightblue: rgba(149, 212, 228, 1);
+$pink: rgba(250, 124, 146, 1);
+$gray: #c4c4c4;
 
 $sans-serif:  'Montserrat', sans-serif;
 
+$mobile: "max-width: 480px";
+$no-mobile: "min-width: 481px";
