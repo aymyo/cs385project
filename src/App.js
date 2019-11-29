@@ -9,10 +9,11 @@ function App() {
   return (
       <BrowserRouter>
           <Header/>
-        <Switch>
-            <Route path="/" component={Homepage} exact />
-            <Route path="/recipes" component={myrecipesView}/>
-        </Switch>
+
+          <Switch>
+              <Route path="/" component={Homepage} exact />
+              <Route path="/recipes" component={myrecipesView}/>
+          </Switch>
       </BrowserRouter>
   );
 }
