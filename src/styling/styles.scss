@@ -1,9 +1,9 @@
 @import "reset.scss";
 @import "vars.scss";
 
-/*
 #root {
   display: none;
+  font: $sans-serif;
 }
 #not-mobile-alert {
   display: block;
@@ -17,5 +17,15 @@
   }
 }
 
+.view {
+  margin: 24px;
+}
 
- */
+.home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .title {
+    text-align: center;
+  }
+}
