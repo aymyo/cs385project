@@ -9,7 +9,7 @@ export default class Homepage extends React.Component {
     render() {
         return (
                 <div className="view home">
-                    <h1>Homepage</h1>
+                    <h1>IM BRID!!!!!</h1>
                 </div>
         );
     }
