@@ -1,10 +1,19 @@
 import React from 'react';
-//import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default class Header extends React.Component {
 
     render() {
         return (
+            <div>
+            <header className="provisional-header">Header
+                <span className="header-link">
+                    <NavLink to='/'>Home</NavLink>
+                </span>
+                <span className="header-link">
+                    <NavLink to='/recipes'>My recipes</NavLink>
+                </span>
+            </header>
             <header className="header">
                 <div>This is the HEADER: </div>
 
@@ -38,6 +47,7 @@ export default class Header extends React.Component {
                 </nav>
 
             </header>
+            </div>
         );
     }
 }
