@@ -5,6 +5,7 @@ import Homepage from './components/views/homepage';
 import Header from './components/header';
 import myrecipesView from './components/views/myrecipesView';
 import help from './components/views/helpView';
+import recipeCreate from "./components/views/recipeCreate";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Switch>
               <Route path="/" component={Homepage} exact />
               <Route path="/recipes" component={myrecipesView}/>
+              <Route path="/create" component={recipeCreate}/>
               <Route path="/help" component={help}/>
           </Switch>
       </BrowserRouter>
