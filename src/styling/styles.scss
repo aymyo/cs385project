@@ -80,14 +80,15 @@
 }
 
 .header {
-  display: none;
+  //display: none;
 }
 .provisional-header {
+  display:none;
   position: fixed;
   border: 1px solid black;
   height: 8vh;
   top:0;
-  display: flex;
+  //display: flex;
   background: white;
   justify-content: center;
   align-items: center;

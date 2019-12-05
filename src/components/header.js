@@ -15,8 +15,6 @@ export default class Header extends React.Component {
                 </span>
             </header>
             <header className="header">
-                <div>This is the HEADER: </div>
-
                 <nav className="navbar navbar-light bg-light">
                     <div className="col-sm-3 text-center" id="dropdown">
                         <div className="pos-f-t">
@@ -28,9 +26,16 @@ export default class Header extends React.Component {
                             <div className="collapse" id="navbarToggleExternalContent">
                                 <div className="bg-light p-4 text-black">
                                     <ul className="nav navbar-nav">
-                                        <li className="active">Home</li>
-                                        <li>Create a recipe</li>
-                                        <li>View your recipes</li>
+                                        <li className="active">
+                                            <span className="header-link">
+                                                <NavLink to='/'>Home</NavLink>
+                                            </span></li>
+                                        <li>Add a recipe</li>
+                                        <li>
+                                            <span className="header-link">
+                                                <NavLink to='/recipes'>My recipes</NavLink>
+                                            </span>
+                                        </li>
                                         <li>Help</li>
                                     </ul>
                                 </div>
