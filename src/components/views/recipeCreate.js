@@ -7,6 +7,10 @@ export default class recipeCreate extends React.Component {
 
     }
 
+    handleChange = {
+
+    }
+
     render() {
         return (
             <div className="view create-recipe">
@@ -15,7 +19,7 @@ export default class recipeCreate extends React.Component {
                     <div className="form-group">
                         <label htmlFor="inputTitle">Recipe title:</label>
                         <input type="text" className="form-control" id="inputTitle" placeholder="Write the title"
-                        onChange={this.}/>
+                        onChange={this.handleChange}/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="inputSteps">Steps:</label>
