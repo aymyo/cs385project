@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1bd8c30-7176-4f67-9eba-2230fd46b86a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/db.json" afterDir="false" />
+    <list default="true" id="d1bd8c30-7176-4f67-9eba-2230fd46b86a" name="Default Changelist" comment="mm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/searchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/searchResult.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchResult.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/recipeCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/recipeCreate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/local_db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styling/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styling/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/views/helpView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/helpView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,18 +69,6 @@
       <command value="npm install -save bootstrap" />
     </option>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
@@ -100,6 +83,18 @@
       <envs />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -190,10 +185,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="mm" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="296" y="0" key="CommitChangelistDialog2" timestamp="1575545597230">
+    <state x="296" y="0" key="CommitChangelistDialog2" timestamp="1575634919945">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="296" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1575545597230" />
+    <state x="296" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1575634919945" />
     <state x="312" y="55" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1575026620776" />
     <state x="312" y="46" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1575032274943" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1575545624253">
@@ -224,10 +219,10 @@
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="444" y="169" key="MultipleFileMergeDialog/0.23.1440.813@0.23.1440.813" timestamp="1575032325035" />
-    <state x="304" y="155" key="Vcs.Push.Dialog.v2" timestamp="1575545602582">
+    <state x="304" y="155" key="Vcs.Push.Dialog.v2" timestamp="1575634912201">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="304" y="155" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1575545602582" />
+    <state x="304" y="155" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1575634912201" />
     <state x="320" y="191" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1575026661862" />
     <state x="320" y="196" key="Vcs.Push.Dialog.v2/0.23.1440.813@0.23.1440.813" timestamp="1575032280304" />
     <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1575540479454">
