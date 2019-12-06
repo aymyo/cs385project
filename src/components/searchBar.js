@@ -14,7 +14,7 @@ export default class searchBar extends React.Component {
         }
     }
 
-    //change the state when the content change in the form
+    //Change the state when the content change in the form
     handleChange = (e) => {
         this.setState({
             [e.target.id]: e.target.value
@@ -42,7 +42,7 @@ export default class searchBar extends React.Component {
     }
 
     keyPressed = async (event) => {
-        if (event.key === "Enter" || event.type === "click") {
+        if (event.type === "click") {
 
             let urlFood=encodeURI(this.state.searchTerm);
             //making a hard coded post request for an apple
@@ -82,6 +82,7 @@ export default class searchBar extends React.Component {
                                 carbs={this.round(obj.food.nutrients.CHOCDF*(this.state.qtyGrams/100), 2)}
                                 pro={this.round(obj.food.nutrients.PROCNT*(this.state.qtyGrams/100), 2)}
                                 qty={this.state.qtyGrams}
+                                callback={this.props.callback}
                             />
                         );
                     }) :

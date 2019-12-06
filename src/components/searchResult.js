@@ -24,13 +24,25 @@ export default class SearchResult extends React.Component{
         e.stopPropagation();
     }
 
+    handleClick = (e) => {
+        const foodObj = {
+            label:this.props.label,
+            cal:this.props.cal,
+            fat:this.props.fat,
+            pro:this.props.pro,
+            carbs:this.props.carbs,
+            qty: this.props.qty,
+        };
+
+        this.props.callback(foodObj);
+    }
+
+
     render() {
         return(
             <div className="api-item"
                  id={this.props.id}
-                 draggable={this.props.draggable}
-                 onDragStart={this.dragStart}
-                 onDragOver={this.dragOver}
+                 onClick={this.handleClick}
             >
                 <h3 className="food-title">{this.props.label} <b className="food-qty">({this.props.qty} g)</b></h3>
                 <div className="food-info" id={"foodNutr"+this.props.index}>

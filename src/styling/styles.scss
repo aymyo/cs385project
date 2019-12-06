@@ -94,6 +94,16 @@
 
 }
 
+.create-recipe {
+  .btn-save {
+    position: fixed;
+    bottom: 12px;
+  }
+  .search-container {
+    width: 100%;
+  }
+}
+
 .header {
   position: fixed;
   height: 8vh;
