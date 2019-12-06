@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1bd8c30-7176-4f67-9eba-2230fd46b86a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/views/RecipeCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/RecipeCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/views/RecipeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/RecipeView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +68,18 @@
       <command value="npm install -save bootstrap" />
     </option>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
@@ -82,18 +94,6 @@
       <envs />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -166,7 +166,8 @@
     <MESSAGE value="test commmit BRID" />
     <MESSAGE value="Updates in header.js file (navbar)" />
     <MESSAGE value="CreateRecipeView added" />
-    <option name="LAST_COMMIT_MESSAGE" value="CreateRecipeView added" />
+    <MESSAGE value="mm" />
+    <option name="LAST_COMMIT_MESSAGE" value="mm" />
   </component>
   <component name="WindowStateProjectService">
     <state x="296" y="0" key="CommitChangelistDialog2" timestamp="1575545597230">
