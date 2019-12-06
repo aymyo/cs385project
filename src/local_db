@@ -1,0 +1,12 @@
+
+
+export let recipe_db = [
+    {id: 1,
+        title: "Spagetthi",
+        instructions: "Lorem Ipsum blablabla",
+        ingredients: [
+            {}
+            ],
+
+    }
+];

@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1bd8c30-7176-4f67-9eba-2230fd46b86a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ayman.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/local_db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/views/RecipeCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/RecipeCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/views/RecipeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/RecipeView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/views/myrecipesView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/myrecipesView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styling/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styling/styles.scss" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,6 +75,18 @@
       <command value="npm install -save bootstrap" />
     </option>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
@@ -83,18 +101,6 @@
       <envs />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -113,6 +119,7 @@
       <workItem from="1575026244310" duration="5593000" />
       <workItem from="1575495169608" duration="1689000" />
       <workItem from="1575540472003" duration="1085000" />
+      <workItem from="1575627528657" duration="437000" />
     </task>
     <task id="LOCAL-00001" summary="initial setup">
       <created>1574685697584</created>
@@ -135,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575026621172</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Header polished">
+      <created>1575544798262</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575544798262</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +173,8 @@
     <MESSAGE value="more setup things" />
     <MESSAGE value="test commmit BRID" />
     <MESSAGE value="Updates in header.js file (navbar)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates in header.js file (navbar)" />
+    <MESSAGE value="Header polished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Header polished" />
   </component>
   <component name="WindowStateProjectService">
     <state x="296" y="0" key="CommitChangelistDialog2" timestamp="1575036762531">
@@ -168,28 +183,28 @@
     <state x="296" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1575036762531" />
     <state x="312" y="55" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1575026620776" />
     <state x="312" y="46" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1575032274943" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1575545056616">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1575501305815">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575545056616" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1575501305815" />
     <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575026287186" />
     <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1575031255033" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1575545056616">
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1575501305815">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1575545056616" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1575501305815" />
     <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1575026287183" />
     <state width="1419" height="245" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1575031255032" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1575545056616">
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1575501305815">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1575545056616" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1575501305815" />
     <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1575026287182" />
     <state width="1419" height="245" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1575031255031" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1575545056616">
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1575501305815">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1575545056616" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1575501305815" />
     <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1575026287185" />
     <state width="1419" height="245" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1575031255033" />
     <state x="444" y="169" key="MultipleFileMergeDialog" timestamp="1575032325035">
@@ -206,10 +221,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1575540479454" />
-    <state x="494" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575545053562">
+    <state x="494" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575540486350">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="494" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1575545053562" />
+    <state x="494" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1575540486350" />
     <state x="391" y="216" width="670" height="675" key="run.anything.popup" timestamp="1575029634439">
       <screen x="0" y="23" width="1440" height="812" />
     </state>

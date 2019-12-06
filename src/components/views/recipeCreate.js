@@ -10,11 +10,12 @@ export default class recipeCreate extends React.Component {
     render() {
         return (
             <div className="view create-recipe">
-                <h3><br/><b>Create recipe</b></h3>
+                <h3 className="title" >Create recipe</h3>
                 <form>
                     <div className="form-group">
                         <label htmlFor="inputTitle">Recipe title:</label>
-                        <input type="text" className="form-control" id="inputTitle" placeholder="Write the title"/>
+                        <input type="text" className="form-control" id="inputTitle" placeholder="Write the title"
+                        onChange={this.}/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="inputSteps">Steps:</label>
