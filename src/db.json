@@ -1,0 +1,22 @@
+{
+    "recipes": [
+        {
+          "id": 1,
+          "title": "Spagetthi",
+          "instructions": "Lorem Ipsum blablabla",
+          "ingredients": [
+            {}
+          ],
+          "labels": ""
+        },
+        {
+          "id": 2,
+          "title": "Spagetthi",
+          "instructions": "Lorem Ipsum blablabla",
+          "ingredients": [
+            {}
+          ],
+          "labels": ""
+        }
+    ]
+}
