@@ -2,6 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+import { faUtensilSpoon } from '@fortawesome/free-solid-svg-icons'
+import { faBook } from '@fortawesome/free-solid-svg-icons'
+import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
 
 export default class Header extends React.Component {
 
@@ -22,17 +26,18 @@ export default class Header extends React.Component {
                     <div className="collapse" id="navbarToggleExternalContent">
                         <nav className="nav navbar-nav h-links">
                             <span className="header-link">
-                                <NavLink to='/'>Home</NavLink>
-                            </span>
+    <NavLink to='/'><FontAwesomeIcon icon={faHome} className="h-user" ></FontAwesomeIcon></NavLink>
+</span>
                             <span className="header-link">
-                                <NavLink to='/create'>Create recipe</NavLink>
-                            </span>
+    <NavLink to='/create'><FontAwesomeIcon icon={ faUtensilSpoon } className="h-user" ></FontAwesomeIcon></NavLink>
+</span>
                             <span className="header-link">
-                                <NavLink to='/recipes'>My recipes</NavLink>
-                            </span>
+    <NavLink to='/recipes'><FontAwesomeIcon icon={faBook} className="h-user" ></FontAwesomeIcon></NavLink>
+</span>
                             <span className="header-link">
-                                <NavLink to='/help'>Help</NavLink>
-                            </span>
+    <NavLink to='/help'><FontAwesomeIcon icon={faQuestionCircle} className="h-user" ></FontAwesomeIcon></NavLink>
+</span>
+
                         </nav>
                     </div>
                 </div>
