@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d1bd8c30-7176-4f67-9eba-2230fd46b86a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styling/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styling/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/styling" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -111,7 +105,7 @@
       <workItem from="1574721078925" duration="503000" />
       <workItem from="1574868508702" duration="2065000" />
       <workItem from="1574898805937" duration="3859000" />
-      <workItem from="1575026244310" duration="5593000" />
+      <workItem from="1575026244310" duration="6384000" />
     </task>
     <task id="LOCAL-00001" summary="initial setup">
       <created>1574685697584</created>
@@ -134,7 +128,21 @@
       <option name="project" value="LOCAL" />
       <updated>1575026621172</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updates in Header.js file">
+      <created>1575032275178</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575032275178</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updates in Header.js file">
+      <created>1575032344123</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575032344123</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,43 +165,57 @@
     <MESSAGE value="initial setup" />
     <MESSAGE value="more setup things" />
     <MESSAGE value="test commmit BRID" />
-    <option name="LAST_COMMIT_MESSAGE" value="test commmit BRID" />
+    <MESSAGE value="Updates in Header.js file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates in Header.js file" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="312" y="46" key="CommitChangelistDialog2" timestamp="1575032274943">
-      <screen x="0" y="23" width="1440" height="813" />
+    <state x="312" y="46" key="CommitChangelistDialog2" timestamp="1575741056589">
+      <screen x="0" y="23" width="1440" height="817" />
     </state>
     <state x="312" y="55" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1575026620776" />
-    <state x="312" y="46" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1575032274943" />
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1575031255033">
-      <screen x="0" y="23" width="1440" height="812" />
+    <state x="312" y="46" key="CommitChangelistDialog2/0.23.1440.813@0.23.1440.813" timestamp="1575032343947" />
+    <state x="312" y="46" key="CommitChangelistDialog2/0.23.1440.817@0.23.1440.817" timestamp="1575741056589" />
+    <state x="144" y="93" key="DiffContextDialog" timestamp="1575741092426">
+      <screen x="0" y="23" width="1440" height="817" />
+    </state>
+    <state x="144" y="93" key="DiffContextDialog/0.23.1440.817@0.23.1440.817" timestamp="1575741092426" />
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1575038420411">
+      <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575026287186" />
     <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1575031255033" />
-    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1575031255032">
-      <screen x="0" y="23" width="1440" height="812" />
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1575038420411" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1575038420411">
+      <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1575026287183" />
     <state width="1419" height="245" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1575031255032" />
-    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1575031255031">
-      <screen x="0" y="23" width="1440" height="812" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1575038420411" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1575038420410">
+      <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1575026287182" />
     <state width="1419" height="245" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1575031255031" />
-    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1575031255033">
-      <screen x="0" y="23" width="1440" height="812" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1575038420410" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1575038420411">
+      <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1575026287185" />
     <state width="1419" height="245" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1575031255033" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1575038420411" />
     <state x="444" y="169" key="MultipleFileMergeDialog" timestamp="1575032325035">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="444" y="169" key="MultipleFileMergeDialog/0.23.1440.813@0.23.1440.813" timestamp="1575032325035" />
-    <state x="320" y="196" key="Vcs.Push.Dialog.v2" timestamp="1575032280304">
+    <state x="320" y="196" key="Vcs.Push.Dialog.v2" timestamp="1575032366636">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
     <state x="320" y="191" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1575026661862" />
-    <state x="320" y="196" key="Vcs.Push.Dialog.v2/0.23.1440.813@0.23.1440.813" timestamp="1575032280304" />
+    <state x="320" y="196" key="Vcs.Push.Dialog.v2/0.23.1440.813@0.23.1440.813" timestamp="1575032366636" />
+    <state x="400" y="230" key="git4idea.merge.GitPullDialog" timestamp="1575741075731">
+      <screen x="0" y="23" width="1440" height="817" />
+    </state>
+    <state x="400" y="230" key="git4idea.merge.GitPullDialog/0.23.1440.817@0.23.1440.817" timestamp="1575741075731" />
     <state x="391" y="216" width="670" height="675" key="run.anything.popup" timestamp="1575029634439">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
