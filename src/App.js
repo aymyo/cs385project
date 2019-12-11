@@ -7,6 +7,7 @@ import myrecipesView from './components/views/myrecipesView';
 import recipeView from './components/views/recipeView';
 import help from './components/views/helpView';
 import recipeCreate from "./components/views/recipeCreate";
+import error from "./components/views/errorView";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route path="/recipe/:recipeID" component={recipeView}/>
               <Route path="/create" component={recipeCreate}/>
               <Route path="/help" component={help}/>
+              <Route path="/404error" component={error}/>
           </Switch>
       </BrowserRouter>
   );

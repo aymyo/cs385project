@@ -12,7 +12,7 @@ export default class helpView extends React.Component {
                 <h3><br/><b>Help</b></h3>
                 <p>Find the features of our app!</p>
                 <div className="propertiesIngredients">
-                    <br/><h5>1. Know the propterties of ingredients!</h5>
+                    <br/><h5>1. Know the properties of ingredients!</h5>
                     <p>You will be able to know the nutritional properties of the ingredients only typing in the search
                         bar of the homepage: (screenshot of the homepage)</p>
                 </div>

@@ -26,17 +26,17 @@ export default class Header extends React.Component {
                     <div className="collapse" id="navbarToggleExternalContent">
                         <nav className="nav navbar-nav h-links">
                             <span className="header-link">
-    <NavLink to='/'><FontAwesomeIcon icon={faHome} className="h-user" ></FontAwesomeIcon></NavLink>
-</span>
+                                <NavLink to='/'><FontAwesomeIcon icon={faHome} className="h-user" ></FontAwesomeIcon></NavLink>
+                            </span>
                             <span className="header-link">
-    <NavLink to='/create'><FontAwesomeIcon icon={ faUtensilSpoon } className="h-user" ></FontAwesomeIcon></NavLink>
-</span>
+                                <NavLink to='/create'><FontAwesomeIcon icon={ faUtensilSpoon } className="h-user" ></FontAwesomeIcon></NavLink>
+                            </span>
                             <span className="header-link">
-    <NavLink to='/recipes'><FontAwesomeIcon icon={faBook} className="h-user" ></FontAwesomeIcon></NavLink>
-</span>
+                                <NavLink to='/recipes'><FontAwesomeIcon icon={faBook} className="h-user" ></FontAwesomeIcon></NavLink>
+                            </span>
                             <span className="header-link">
-    <NavLink to='/help'><FontAwesomeIcon icon={faQuestionCircle} className="h-user" ></FontAwesomeIcon></NavLink>
-</span>
+                                <NavLink to='/help'><FontAwesomeIcon icon={faQuestionCircle} className="h-user" ></FontAwesomeIcon></NavLink>
+                            </span>
 
                         </nav>
                     </div>
