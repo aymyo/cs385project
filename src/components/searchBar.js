@@ -57,6 +57,7 @@ export default class searchBar extends React.Component {
     }
 
     render() {
+        console.log(this);
         return (
             <div className="search-container">
             <div className="search-bar">
@@ -74,7 +75,6 @@ export default class searchBar extends React.Component {
                             <SearchResult
                                 id={"foodRes"+index}
                                 key={"foodRes"+index}
-                                draggable="true"
                                 index={index}
                                 label={obj.food.label}
                                 cal={this.round(obj.food.nutrients.ENERC_KCAL*(this.state.qtyGrams/100), 2)}

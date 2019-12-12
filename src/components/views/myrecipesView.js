@@ -1,10 +1,50 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
+import image from '../../images/speghetti.jpg';
+import firebase from "firebase";
+import fbconfig from "../../firebase";
 
 export default class recipesView extends React.Component {
-    state = {
+    constructor(props) {
+        super(props);
+        this.state = {
+            recipeList: [],
+        }
+    }
 
+    componentDidMount() {
+        let ref = firebase.database().ref('recipes').orderByChild('id');
+        ref.on('value', (snapshot) => {
+            let recipeData = snapshot.val();
+
+            // This array will store the objects we download from the firebase db.
+            let recipeList = [];
+            for (let r in recipeData)
+            {
+                // create a JSON object version of our object.
+                let currObj =  {
+                    id: recipeData[r].id,
+                    title: recipeData[r].title,
+                    intructions: recipeData[r].instructions,
+                    ingredients: recipeData[r].ingredients,
+                    labels: recipeData[r].labels,
+                    nutrition: recipeData[r].nutrition,
+                    };
+                // add it to our newStateMessages array.
+                recipeList.push(currObj);
+            } // end for loop
+
+            // call the method to update state in App.js component.
+            this.setState({
+                recipeList: recipeList,
+            });
+            console.log(recipeList);
+        }); // end of the on method
+    }
+
+    handleClick(recipe_id){
+        console.log(recipe_id);
     }
 
     render() {
@@ -13,51 +53,31 @@ export default class recipesView extends React.Component {
                 <h3 className="title">My recipes</h3>
 
                 <div className="search-results">
+                {this.state.recipeList.map((recipe) => {
+                    return (
+                        <div className="recipe-preview" onClick={() => this.handleClick(recipe.id)} key={"recipe:"+recipe.id}>
+                            <div className="recipe-pic">
+                                <img className="image" src={image}></img>
+                                <FontAwesomeIcon icon={faCamera} className="icon"></FontAwesomeIcon>
+                            </div>
 
-                    <div className="recipe-preview">
-                        <div className="recipe-pic">
-                            <img className="image" src={'../../public/spaghetti.jpg'}></img>
-                            <FontAwesomeIcon icon={faCamera} className="icon"></FontAwesomeIcon>
-                        </div>
+                            <div className="api-item">
+                                <h3 className="food-title">{recipe.title} {/*<b className="food-qty">(200{this.props.qty} g)</b>*/}</h3>
 
-
-                        <div className="api-item">
-                            <h3 className="food-title">Spaghetti{this.props.label} <b className="food-qty">(200{this.props.qty} g)</b></h3>
-                            <div className="food-info" id={"foodNutr"+this.props.index}>
-                                <div className="info-line">
-                                    <p className="info-item"><b className="nutrient-name">Calories</b>1204 {this.props.cal}kcal</p>
-                                    <p className="info-item"><b className="nutrient-name">Fat</b> 213{this.props.fat}g</p>
-                                </div>
-                                <div className="info-line">
-                                    <p className="info-item"><b className="nutrient-name">Carbs</b> 123{this.props.carbs}g</p>
-                                    <p className="info-item"><b className="nutrient-name">Protein</b> 123{this.props.pro}g</p>
+                                <div className="food-info" >
+                                    <div className="info-line">
+                                        <p className="info-item"><b className="nutrient-name">Calories</b>{recipe.nutrition.cal}kcal</p>
+                                        <p className="info-item"><b className="nutrient-name">Fat</b> {recipe.nutrition.fat}g</p>
+                                    </div>
+                                    <div className="info-line">
+                                        <p className="info-item"><b className="nutrient-name">Carbs</b> {recipe.nutrition.carbs}g</p>
+                                        <p className="info-item"><b className="nutrient-name">Protein</b> {recipe.nutrition.pro}g</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div className="recipe-preview">
-                        <div className="recipe-pic">
-                            <img className="image" src={'../../public/spaghetti.jpg'}></img>
-                            <FontAwesomeIcon icon={faCamera} className="icon"></FontAwesomeIcon>
-                        </div>
-
-
-                        <div className="api-item">
-                            <h3 className="food-title">Spaghetti{this.props.label} <b className="food-qty">(200{this.props.qty} g)</b></h3>
-                            <div className="food-info" id={"foodNutr"+this.props.index}>
-                                <div className="info-line">
-                                    <p className="info-item"><b className="nutrient-name">Calories</b>1204 {this.props.cal}kcal</p>
-                                    <p className="info-item"><b className="nutrient-name">Fat</b> 213{this.props.fat}g</p>
-                                </div>
-                                <div className="info-line">
-                                    <p className="info-item"><b className="nutrient-name">Carbs</b> 123{this.props.carbs}g</p>
-                                    <p className="info-item"><b className="nutrient-name">Protein</b> 123{this.props.pro}g</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    );
+                })}
                 </div>
             </div>
         );

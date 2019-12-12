@@ -1,14 +1,24 @@
 import React from 'react';
 import SearchBar from '../searchBar'
 import { NavLink } from 'react-router-dom';
-import db from '../../db';
+import firebase from "firebase";
+import fbconfig from "../../firebase";
 
 export default class recipeCreate extends React.Component {
-    state = {
-        recipeTitle: '',
-        recipeInstructions: '',
-        recipeIngredients: [],
-        recipeLabels: [],
+    constructor(props){
+        super(props);
+        this.state = {
+            recipeTitle: '',
+            recipeInstructions: '',
+            recipeIngredients: [],
+            recipeLabels: [],
+            recipeNutrition: {
+                cal: '',
+                carbs: '',
+                fat: '',
+                pro: '',
+            }
+        }
     }
 
     //change the state when the content change in the form
@@ -19,8 +29,6 @@ export default class recipeCreate extends React.Component {
     }
 
     componentDidMount() {
-        console.log(db);
-        console.log(db.recipes);
 
     }
 
@@ -57,15 +65,18 @@ export default class recipeCreate extends React.Component {
     }
 
     render() {
+        console.log(this);
         return (
             <div className="view create-recipe">
                 <h3 className="title" >Create recipe</h3>
                 <form>
+                    {/*
                     <div className="form-group">
                         <label htmlFor="inputTitle">Picture</label>
                         <input type="file" className="form-control" id="recipeTitle" placeholder="Upload you pic"
                                onChange={this.handleChange}/>
                     </div>
+                     */}
                     <div className="form-group">
                         <label htmlFor="inputTitle">Recipe title:</label>
                         <input type="text" className="form-control" id="recipeTitle" placeholder="Write the title"

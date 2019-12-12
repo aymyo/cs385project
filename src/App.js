@@ -8,21 +8,30 @@ import recipeView from './components/views/recipeView';
 import help from './components/views/helpView';
 import recipeCreate from "./components/views/recipeCreate";
 import error from "./components/views/errorView";
+import firebase from "firebase";
+import fbconfig from "./firebase";
 
-function App() {
-  return (
-      <BrowserRouter>
-          <Header/>
-          <Switch>
-              <Route path="/" component={Homepage} exact />
-              <Route path="/recipes" component={myrecipesView}/>
-              <Route path="/recipe/:recipeID" component={recipeView}/>
-              <Route path="/create" component={recipeCreate}/>
-              <Route path="/help" component={help}/>
-              <Route path="/404error" component={error}/>
-          </Switch>
-      </BrowserRouter>
-  );
+class App extends React.Component {
+    constructor(props) {
+        super();
+        firebase.initializeApp(fbconfig);
+    }
+
+    render() {
+        return (
+            <BrowserRouter>
+                <Header/>
+                <Switch>
+                    <Route path="/" component={Homepage} exact />
+                    <Route path="/recipes" component={myrecipesView}/>
+                    <Route path="/recipe/:recipeID" component={recipeView}/>
+                    <Route path="/create" component={recipeCreate}/>
+                    <Route path="/help" component={help}/>
+                    <Route path="/404error" component={error}/>
+                </Switch>
+            </BrowserRouter>
+        );
+    }
 }
 
 export default App;

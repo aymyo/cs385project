@@ -5,18 +5,44 @@
           "title": "Spagetthi",
           "instructions": "Lorem Ipsum blablabla",
           "ingredients": [
-            {}
+            {
+              "cal": 143,
+              "carbs": 0.72,
+              "fat": 9.51,
+              "label": "egg",
+              "pro": 12.56,
+              "qty": 100
+            }
           ],
-          "labels": ""
+          "labels": ["pasta", "egg"],
+          "nutrition": {
+            "cal": 143,
+            "carbs": 0.72,
+            "fat": 9.51,
+            "pro": 12.56
+          }
         },
         {
           "id": 2,
-          "title": "Spagetthi",
+          "title": "Spagoo",
           "instructions": "Lorem Ipsum blablabla",
           "ingredients": [
-            {}
+            {
+              "cal": 143,
+              "carbs": 0.72,
+              "fat": 9.51,
+              "label": "egg",
+              "pro": 12.56,
+              "qty": 100
+            }
           ],
-          "labels": ""
+          "labels": ["pasta", "egg"],
+          "nutrition": {
+            "cal": 143,
+            "carbs": 0.72,
+            "fat": 9.51,
+            "pro": 12.56
+          }
         }
     ]
 }

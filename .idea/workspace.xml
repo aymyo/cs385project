@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1bd8c30-7176-4f67-9eba-2230fd46b86a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/views/errorView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ayman.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ayman.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/speghetti.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/speghetti.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/helpView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/helpView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/searchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/views/myrecipesView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/myrecipesView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/views/recipeCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/recipeCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styling/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styling/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +69,9 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ayman\PhpstormProjects\cs385project\src\images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ayman\PhpstormProjects\cs385project\src\styling" />
     </key>
@@ -70,6 +83,19 @@
       <command value="git branch --set-upstream-to=origin/master master" />
       <command value="npm install node-sass" />
       <command value="npm install -save bootstrap" />
+      <command value="npm install firebase" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
     </option>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -86,18 +112,6 @@
       <envs />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -172,6 +186,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
