@@ -128,9 +128,8 @@
     .h-title {
       font-size: 24px;
     }
-    .h-user {
-      font-size: 24px;
-      margin: 0 11px;
+    .h-left {
+      width: 50px;
     }
   }
   .header-navbar {
@@ -141,17 +140,21 @@
     }
   }
 }
-.provisional-header {
-  display:none;
+
+
+.header-left {
   position: fixed;
-  border: 1px solid black;
+  left: 28px;
+  top: 0;
+  display: flex;
   height: 8vh;
-  top:0;
-  //display: flex;
-  background: white;
-  justify-content: center;
   align-items: center;
-  width: 100vw;
+  z-index: 10;
+  .h-left {
+    color: black;
+    font-size: 24px;
+    margin: 0 11px;
+  }
 }
 
 

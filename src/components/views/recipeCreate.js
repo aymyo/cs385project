@@ -17,6 +17,7 @@ export default class recipeCreate extends React.Component {
                 carbs: '',
                 fat: '',
                 pro: '',
+                qty: '',
             }
         }
     }
@@ -29,18 +30,43 @@ export default class recipeCreate extends React.Component {
     }
 
     componentDidMount() {
+        let ref = firebase.database().ref('recipes').orderByChild('id');
+        ref.on('value', (snapshot) => {
+            let recipeData = snapshot.val();
 
+            // This array will store the objects we download from the firebase db.
+            let recipeList = [];
+            for (let r in recipeData)
+            {
+                // create a JSON object version of our object.
+                let currObj =  {
+                    id: recipeData[r].id,
+                    title: recipeData[r].title,
+                    intructions: recipeData[r].instructions,
+                    ingredients: recipeData[r].ingredients,
+                    labels: recipeData[r].labels,
+                    nutrition: recipeData[r].nutrition,
+                };
+                // add it to our newStateMessages array.
+                recipeList.push(currObj);
+            } // end for loop
+
+            // call the method to update state in App.js component.
+            this.setState({
+                lastID: recipeList[recipeList.length-1].id,
+            });
+        }); // end of the on method
     }
 
     saveRecipe = () => {
-        let newRecipe = {
-            id: '3',
+        firebase.database().ref('recipes/' + (this.state.lastID + 1)).set({
+            id: (this.state.lastID + 1),
             title: this.state.recipeTitle,
             instructions: this.state.recipeInstructions,
             ingredients: this.state.recipeIngredients,
             labels: this.state.recipeLabels,
-        }
-        console.log(newRecipe);
+        }).then(r => console.log("YES"));
+
     }
 
     addIngredient = (ingredient) => {
@@ -65,7 +91,6 @@ export default class recipeCreate extends React.Component {
     }
 
     render() {
-        console.log(this);
         return (
             <div className="view create-recipe">
                 <h3 className="title" >Create recipe</h3>
@@ -79,12 +104,12 @@ export default class recipeCreate extends React.Component {
                      */}
                     <div className="form-group">
                         <label htmlFor="inputTitle">Recipe title:</label>
-                        <input type="text" className="form-control" id="recipeTitle" placeholder="Write the title"
+                        <input required type="text" className="form-control" id="recipeTitle" placeholder="Write the title"
                         onChange={this.handleChange}/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="inputSteps">Steps:</label>
-                        <textarea type="text" className="form-control" id="recipeInstructions" placeholder="Write the steps"/>
+                        <textarea required type="text" className="form-control" id="recipeInstructions" placeholder="Write the steps"/>
                     </div>
                     <div id="ingredients">
                         <p>Ingredients:</p>

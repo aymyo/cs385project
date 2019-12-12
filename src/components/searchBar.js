@@ -57,7 +57,6 @@ export default class searchBar extends React.Component {
     }
 
     render() {
-        console.log(this);
         return (
             <div className="search-container">
             <div className="search-bar">

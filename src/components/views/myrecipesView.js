@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
 import image from '../../images/speghetti.jpg';
@@ -45,6 +46,8 @@ export default class recipesView extends React.Component {
 
     handleClick(recipe_id){
         console.log(recipe_id);
+        let url= "/recipe/"+recipe_id;
+        this.props.history.push(url);
     }
 
     render() {
@@ -66,12 +69,16 @@ export default class recipesView extends React.Component {
 
                                 <div className="food-info" >
                                     <div className="info-line">
-                                        <p className="info-item"><b className="nutrient-name">Calories</b>{recipe.nutrition.cal}kcal</p>
-                                        <p className="info-item"><b className="nutrient-name">Fat</b> {recipe.nutrition.fat}g</p>
+                                        <p className="info-item"><b className="nutrient-name">Calories</b>
+                                            {recipe.nutrition ? recipe.nutrition.cal : ''}kcal</p>
+                                        <p className="info-item"><b className="nutrient-name">Fat</b>
+                                            {recipe.nutrition ? recipe.nutrition.fat : ''}g</p>
                                     </div>
                                     <div className="info-line">
-                                        <p className="info-item"><b className="nutrient-name">Carbs</b> {recipe.nutrition.carbs}g</p>
-                                        <p className="info-item"><b className="nutrient-name">Protein</b> {recipe.nutrition.pro}g</p>
+                                        <p className="info-item"><b className="nutrient-name">Carbs</b>
+                                            {recipe.nutrition ? recipe.nutrition.carbs : ''}g</p>
+                                        <p className="info-item"><b className="nutrient-name">Protein</b>
+                                            {recipe.nutrition ? recipe.nutrition.pro : ''}g</p>
                                     </div>
                                 </div>
                             </div>

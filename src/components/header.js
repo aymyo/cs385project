@@ -13,35 +13,38 @@ export default class Header extends React.Component {
         return (
             <header className="header">
                 <div className="header-view">
+                    <span className="h-left" ></span>
+                    <span className="h-title"><b>Nutri</b>meal</span>
                     <button className="navbar-toggler h-toggle" type="button" data-toggle="collapse"
                             data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon my-toggler"></span>
                     </button>
-                    <span className="h-title"><b>Nutri</b>meal</span>
-                    <FontAwesomeIcon icon={faUser} className="h-user" ></FontAwesomeIcon>
                 </div>
 
                 <div className="col-sm-3 text-center header-navbar" id="dropdown">
                     <div className="collapse" id="navbarToggleExternalContent">
                         <nav className="nav navbar-nav h-links">
-                            <span className="header-link">
+                            <span className="header-link" data-toggle="collapse"
+                                  data-target="#navbarToggleExternalContent">
                                 <NavLink to='/'><FontAwesomeIcon icon={faHome} className="h-user" ></FontAwesomeIcon></NavLink>
                             </span>
-                            <span className="header-link">
+                            <span className="header-link" data-toggle="collapse"
+                                  data-target="#navbarToggleExternalContent">
                                 <NavLink to='/create'><FontAwesomeIcon icon={ faUtensilSpoon } className="h-user" ></FontAwesomeIcon></NavLink>
                             </span>
-                            <span className="header-link">
+                            <span className="header-link" data-toggle="collapse"
+                                  data-target="#navbarToggleExternalContent">
                                 <NavLink to='/recipes'><FontAwesomeIcon icon={faBook} className="h-user" ></FontAwesomeIcon></NavLink>
                             </span>
-                            <span className="header-link">
+                            <span className="header-link" data-toggle="collapse"
+                                  data-target="#navbarToggleExternalContent">
                                 <NavLink to='/help'><FontAwesomeIcon icon={faQuestionCircle} className="h-user" ></FontAwesomeIcon></NavLink>
                             </span>
 
                         </nav>
                     </div>
                 </div>
-
             </header>
         );
     }
