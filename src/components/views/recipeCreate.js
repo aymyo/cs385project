@@ -113,7 +113,7 @@ export default class recipeCreate extends React.Component {
                 carbs: acc.carbs + cv.carbs,
                 fat: acc.fat + cv.fat,
                 pro: acc.pro + cv.pro,
-                qty: acc.qty + cv.qty,
+                qty: (+acc.qty) + (+cv.qty),
             };
         });
 
@@ -153,6 +153,13 @@ export default class recipeCreate extends React.Component {
                  };
 
              });
+             recipeNutrition = {
+                 cal: round(recipeNutrition.cal,2),
+                 carbs: round(recipeNutrition.carbs,2),
+                 fat: round(recipeNutrition.fat,2),
+                 pro: round(recipeNutrition.pro,2),
+                 qty: round(recipeNutrition.qty,2),
+             }
          } else { //If there's only 1 item and we remove it, nutrition sets to 0
              recipeNutrition = 0;
          }
