@@ -19,7 +19,7 @@
 }
 
 .view {
-  padding: 28px;
+  padding: 28px 28px 64px 28px;
   min-height: 100vh;
 }
 
@@ -112,12 +112,11 @@
     border: 2px black solid ;
   }
   .btn-delete {
-    position: fixed;
-    bottom: 20px;
     width: 128px;
     border-radius: 12px;
     font-weight: bold;
     background: black;
+    margin-top: 12px;
     color: white;
     border: none;
     &:active, &:hover {
@@ -318,6 +317,13 @@
     font-weight: 300;
   }
 }
+
+.errorpage{
+  .image {
+    width: 100px;
+  }
+}
+
 .search-results {
   margin-top: 12px;
   text-align: justify;
@@ -391,8 +397,3 @@
   }
 }
 
-.404-page {
-  .image {
-    max-height: 500px;
-    }
-    }

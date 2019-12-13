@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1bd8c30-7176-4f67-9eba-2230fd46b86a" name="Default Changelist" comment="">
+    <list default="true" id="d1bd8c30-7176-4f67-9eba-2230fd46b86a" name="Default Changelist" comment="comments added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/searchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/searchResult.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchResult.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/views/errorView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/errorView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/helpView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/helpView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/homepage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/ingredientView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/ingredientView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/recipeCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/recipeCreate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/recipeList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/recipeList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/recipeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/recipeView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styling/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styling/styles.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -132,7 +122,7 @@
       <workItem from="1575540472003" duration="1085000" />
       <workItem from="1576090604885" duration="2622000" />
       <workItem from="1576193167908" duration="11986000" />
-      <workItem from="1576233571019" duration="10226000" />
+      <workItem from="1576233571019" duration="11917000" />
     </task>
     <task id="LOCAL-00001" summary="initial setup">
       <created>1574685697584</created>
@@ -232,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576241140208</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="comments added">
+      <created>1576243859600</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1576243859601</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +265,8 @@
     <MESSAGE value="mm" />
     <MESSAGE value="Delete recipe" />
     <MESSAGE value="bug fixed: create recipe delete items" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fixed: create recipe delete items" />
+    <MESSAGE value="comments added" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="296" y="0" key="CommitChangelistDialog2" timestamp="1575634954245">

@@ -11,19 +11,19 @@ export default class errorView extends React.Component {
 
     render() {
         return (
-            <div className="view 404-page">
+            <div className="view errorpage">
                 <h3 className="title">404 Not found</h3>
-                <h5>Uh Oh...! Sorry, the page you were looking for doesn't exist.</h5>
-                <br/><p>You might have typed in the wrong address or the page has moved. In the meantime, try again or
-                    return to the homepage :)</p>
-                <br/>
-                <img className="image" src={image}></img>
 
-                <div className="menuError">
-                    <span className="header-link">
-                        <NavLink to='/'>Home</NavLink>
-                    </span>
+                <h5>Uh Oh...! Sorry, the page you were looking for doesn't exist.</h5>
+
+
+                <div className="img-container">
+                    <img className="image" src={image} alt="error image"></img>
                 </div>
+
+                <br/><p>You might have typed in the wrong address or the page has moved. In the meantime, try again or
+                    return to the <NavLink to='/'>Homepage</NavLink> :)</p>
+                <br/>
 
 
             </div>
