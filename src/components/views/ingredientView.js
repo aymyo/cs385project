@@ -3,16 +3,17 @@ import { NavLink } from 'react-router-dom';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChevronLeft} from "@fortawesome/free-solid-svg-icons";
 
+/* NOT USED
 export default class ingredientView extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            is_loaded: false,
+            is_loaded: false,   //This variable changes when we get the info from the db
         }
     }
 
     async componentDidMount() {
-        /*
+
         let path= "recipes/" + (this.props.match.params.recipeID - 1);
         let ref = firebase.database().ref(path);
         await ref.on('value', (snapshot) => {
@@ -25,7 +26,7 @@ export default class ingredientView extends React.Component {
                 is_loaded: true,
             });
         }); // end of the on method
-        */
+
     }
 
     render() {
@@ -101,3 +102,4 @@ export default class ingredientView extends React.Component {
     }
 
 }
+*/

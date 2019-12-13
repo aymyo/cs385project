@@ -1,6 +1,8 @@
 import React from 'react';
 import SearchBar from '../searchBar'
 
+/* This component is our homepage
+* The user can use the SearchBar to look for ingredients and their nutrition*/
 export default class Homepage extends React.Component {
     state = {
 

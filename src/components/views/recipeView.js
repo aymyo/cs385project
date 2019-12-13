@@ -4,11 +4,13 @@ import firebase from "firebase";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChevronLeft} from "@fortawesome/free-solid-svg-icons";
 
+/* This component is displayed whenever the user clicks in a recipe
+* It calls the firebase database and retrieves the information of that recipe*/
 export default class recipeView extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            is_loaded: false,
+            is_loaded: false, //This variable changes when we get the info from the db
             message: 'Loading',
         }
     }

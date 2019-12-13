@@ -2,6 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import image from '../../images/brokenphone.png';
 
+/* This page is displayed whenever the user goes to a path that does not exist
+* It only shows the 404 message and a link to the homepage*/
 export default class errorView extends React.Component {
     state = {
 
