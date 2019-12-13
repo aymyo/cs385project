@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import { faUtensilSpoon } from '@fortawesome/free-solid-svg-icons'
 import { faBook } from '@fortawesome/free-solid-svg-icons'
@@ -27,19 +26,19 @@ export default class Header extends React.Component {
                         <nav className="nav navbar-nav h-links">
                             <span className="header-link" data-toggle="collapse"
                                   data-target="#navbarToggleExternalContent">
-                                <NavLink to='/'><FontAwesomeIcon icon={faHome} className="h-user" ></FontAwesomeIcon></NavLink>
+                                <NavLink to='/'><FontAwesomeIcon icon={faHome} className="home-link" ></FontAwesomeIcon></NavLink>
                             </span>
                             <span className="header-link" data-toggle="collapse"
                                   data-target="#navbarToggleExternalContent">
-                                <NavLink to='/create'><FontAwesomeIcon icon={ faUtensilSpoon } className="h-user" ></FontAwesomeIcon></NavLink>
+                                <NavLink to='/create'><FontAwesomeIcon icon={ faUtensilSpoon } className="create-link" ></FontAwesomeIcon></NavLink>
                             </span>
                             <span className="header-link" data-toggle="collapse"
                                   data-target="#navbarToggleExternalContent">
-                                <NavLink to='/recipes'><FontAwesomeIcon icon={faBook} className="h-user" ></FontAwesomeIcon></NavLink>
+                                <NavLink to='/recipes'><FontAwesomeIcon icon={faBook} className="recipes-link" ></FontAwesomeIcon></NavLink>
                             </span>
                             <span className="header-link" data-toggle="collapse"
                                   data-target="#navbarToggleExternalContent">
-                                <NavLink to='/help'><FontAwesomeIcon icon={faQuestionCircle} className="h-user" ></FontAwesomeIcon></NavLink>
+                                <NavLink to='/help'><FontAwesomeIcon icon={faQuestionCircle} className="help-link" ></FontAwesomeIcon></NavLink>
                             </span>
 
                         </nav>

@@ -19,7 +19,7 @@
 }
 
 .view {
-  padding: 24px;
+  padding: 28px;
   min-height: 100vh;
 }
 
@@ -92,14 +92,105 @@
     border-top-right-radius: 0;
   }
 }
-.recipe-view {
 
+.view-recipe {
+  p {
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  .instructions {
+    white-space: pre-line;
+
+  }
+  .nutrition {
+    margin-top: 16px;
+    border-radius: 0;
+    box-shadow: none;
+    p {
+      font-weight: normal;
+    }
+    border: 2px black solid ;
+  }
+  .btn-delete {
+    position: fixed;
+    bottom: 20px;
+    width: 128px;
+    border-radius: 12px;
+    font-weight: bold;
+    background: black;
+    color: white;
+    border: none;
+    &:active, &:hover {
+      background: $pink;
+      color: black;
+    }
+  }
 }
 
 .create-recipe {
+  padding-bottom: 44px;
+  textarea.form-control {
+    min-height: 100px;
+    padding-top: 8px;
+    &:hover, &:active {
+      margin-bottom: 0;
+    }
+  }
+  label {
+    font-weight: bold;
+  }
+  .form-control {
+    display: flex;
+    border: none;
+    outline: none;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 42px;
+    background: white;
+    padding: 0 8px;
+    &:hover, &:active {
+      border: none;
+      outline: none;
+      border-bottom: solid 2px $aquamarine;
+      height: 44px;
+      margin-bottom: -2px;
+    }
+  }
+  .nutrition {
+    border-radius: 0;
+    box-shadow: none;
+    border: 2px black solid ;
+  }
   .btn-save {
     position: fixed;
-    bottom: 12px;
+    bottom: 20px;
+    width: 128px;
+    border-radius: 12px;
+    font-weight: bold;
+    background: black;
+    color: white;
+    border: none;
+    &:active, &:hover {
+      background: $aquamarine;
+      color: black;
+    }
+    &.error {
+      &:after {
+        content: 'Required inputs are empty';
+        position: absolute;
+        font-weight: bold;
+        font-size: 11px;
+        top: 10px;
+        right: -180px;
+        color: black;
+        background: $pink;
+      }
+      &:active, &:hover {
+        background: $pink;
+        color: black;
+      }
+    }
   }
   .search-container {
     width: 100%;
@@ -111,6 +202,7 @@
   height: 8vh;
   top:0;
   z-index: 4;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   background: white;
   width: 100vw;
   .header-view {
@@ -121,6 +213,8 @@
     justify-content: space-between;
     .h-toggle {
       color: black;
+      padding: 0;
+      margin-right: -4px;
       .my-toggler {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
       }
@@ -129,15 +223,26 @@
       font-size: 24px;
     }
     .h-left {
-      width: 50px;
+      width: 36px;
     }
   }
   .header-navbar {
+    padding: 0;
     background: white;
     width: 100vw;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     .h-links {
       margin: 0;
+      .header-link {
+        padding: 8px 0;
+        border-top: 1px $light-gray solid;
+        .home-link,.create-link,.recipes-link,.help-link {
+          font-size: 24px;
+          color: black;
+        }
+      }
     }
+
   }
 }
 
@@ -153,7 +258,7 @@
   .h-left {
     color: black;
     font-size: 24px;
-    margin: 0 11px;
+    margin: 0;
   }
 }
 
@@ -163,7 +268,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80vw;
+  width: 100%;
 }
 .search-bar {
   display: flex;
@@ -171,7 +276,7 @@
   align-items: center;
   width: 100%;
   height: 42px;
-  border-radius: 12px;
+  border-radius: 6px;
   background: white;
   padding: 0 8px;
   &:hover, &:active {

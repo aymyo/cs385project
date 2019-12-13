@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
 export default class helpView extends React.Component {
     state = {
@@ -9,8 +8,7 @@ export default class helpView extends React.Component {
     render() {
         return (
             <div className="view help">
-                <h3><br/><b>Help</b></h3>
-                <p>Find the features of our app!</p>
+                <h3 className="title">Help</h3>
                 <div className="propertiesIngredients">
                     <br/><h5>1. Know the properties of ingredients!</h5>
                     <p>You will be able to know the nutritional properties of the ingredients only typing in the search

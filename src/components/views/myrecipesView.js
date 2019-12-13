@@ -1,10 +1,8 @@
 import React from 'react';
-import { useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
 import image from '../../images/speghetti.jpg';
 import firebase from "firebase";
-import fbconfig from "../../firebase";
 
 export default class recipesView extends React.Component {
     constructor(props) {
@@ -60,7 +58,7 @@ export default class recipesView extends React.Component {
                     return (
                         <div className="recipe-preview" onClick={() => this.handleClick(recipe.id)} key={"recipe:"+recipe.id}>
                             <div className="recipe-pic">
-                                <img className="image" src={image}></img>
+                                <img className="image" src={image} alt="Recipe pic"></img>
                                 <FontAwesomeIcon icon={faCamera} className="icon"></FontAwesomeIcon>
                             </div>
 

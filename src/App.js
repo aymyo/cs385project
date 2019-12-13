@@ -8,7 +8,7 @@ import recipeView from './components/views/recipeView';
 import help from './components/views/helpView';
 import recipeCreate from "./components/views/recipeCreate";
 import error from "./components/views/errorView";
-import firebase from "firebase";
+import firebase from "firebase/app";
 import fbconfig from "./firebase";
 import ingredientView from "./components/views/ingredientView";
 
@@ -29,7 +29,7 @@ class App extends React.Component {
                     <Route path="/ingredient/:ingrID" component={ingredientView}/>
                     <Route path="/create" component={recipeCreate}/>
                     <Route path="/help" component={help}/>
-                    <Route path="/404error" component={error}/>
+                    <Route component={error}/>
                 </Switch>
             </BrowserRouter>
         );

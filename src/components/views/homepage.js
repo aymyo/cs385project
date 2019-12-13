@@ -1,6 +1,5 @@
 import React from 'react';
 import SearchBar from '../searchBar'
-import { NavLink } from 'react-router-dom';
 
 export default class Homepage extends React.Component {
     state = {
