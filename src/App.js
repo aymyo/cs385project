@@ -15,10 +15,13 @@ import ingredientView from "./components/views/ingredientView";
 class App extends React.Component {
     constructor(props) {
         super(props);
+
+        //Initializes the database
         firebase.initializeApp(fbconfig);
     }
 
     render() {
+        //Routing for all the pages of our App
         return (
             <BrowserRouter>
                 <Header/>
@@ -26,7 +29,7 @@ class App extends React.Component {
                     <Route path="/" component={Homepage} exact />
                     <Route path="/recipes" component={recipeList}/>
                     <Route path="/recipe/:recipeID" component={recipeView}/>
-                    <Route path="/ingredient/:ingrID" component={ingredientView}/>
+                    {/*<Route path="/ingredient/:ingrID" component={ingredientView}/>*/}
                     <Route path="/create" component={recipeCreate}/>
                     <Route path="/help" component={help}/>
                     <Route component={error}/>

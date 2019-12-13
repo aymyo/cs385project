@@ -1,5 +1,7 @@
 import React from 'react';
 
+/* This component is displayed whenever the user goes to the path /help
+* It shows information on how to use the App*/
 export default class helpView extends React.Component {
     state = {
 

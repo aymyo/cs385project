@@ -4,7 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import {round} from '../util';
 
-
+/* This component is displayed in the homepage and in the recipeCreate component
+* It is our most important component. It displays a searchbar with an additional quantity input.
+* The user can look for any ingredient or food and the API will return the nutrition values for the quantity chosen.*/
 export default class searchBar extends React.Component {
     constructor(props){
         super(props);

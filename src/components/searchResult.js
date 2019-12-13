@@ -1,29 +1,10 @@
 import React from 'react';
 
+/* This component is displayed everytime the user search with the SearchBar
+* It displays the results in a card styled like the nutrition in the foods. */
 export default class SearchResult extends React.Component{
-    dragStart = e =>{
-        const foodObj={
-            label:this.props.label,
-            cal:this.props.cal,
-            fat:this.props.fat,
-            pro:this.props.pro,
-            carbs:this.props.carbs,
-            qty: this.props.qty,
-        };
-        var foodJSON=JSON.stringify(foodObj);
 
-        //NOTE: .setData takes a string argument for data to be passed, hence the JSON.stringify
-        e.dataTransfer.setData('foodJSON',foodJSON);
-
-        // setTimeout(() =>{
-        //     target.style.display="none";
-        // },0)
-    }
-
-    dragOver = e =>{
-        e.stopPropagation();
-    }
-
+    //Whenever the user clicks on the label, it's added to the ingredient list of the recipe calling a callback function
     handleClick = (e) => {
         const foodObj = {
             label:this.props.label,

@@ -6,6 +6,9 @@ import { faUtensilSpoon } from '@fortawesome/free-solid-svg-icons'
 import { faBook } from '@fortawesome/free-solid-svg-icons'
 import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
 
+/* This component is displayed always on the top of the screen
+* It shows the header menu, with the App name, and the toggle menu button. The user can click it to unfold the menu
+* and navigate through the app by clicking the links.*/
 export default class Header extends React.Component {
 
     render() {

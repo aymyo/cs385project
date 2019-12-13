@@ -4,6 +4,9 @@ import { faCamera } from '@fortawesome/free-solid-svg-icons'
 import image from '../../images/speghetti.jpg';
 import firebase from "firebase";
 
+/* This component is displayed whenever the user goes to the path "/recipes"
+* It shows the list of recipes stored in the database. Whenever the user clicks on one, it redirects to the
+* recipeView of that recipe.*/
 export default class recipeList extends React.Component {
     constructor(props) {
         super(props);
@@ -17,6 +20,8 @@ export default class recipeList extends React.Component {
 
     componentDidMount() {
         this._isMounted = true;
+
+        // We call the database for the list of recipes
         let ref = firebase.database().ref('recipes').orderByChild('id');
         ref.on('value', async (snapshot) => {
             let recipeData = snapshot.val();
@@ -49,6 +54,7 @@ export default class recipeList extends React.Component {
         }); // end of the on method
     }
 
+    // Redirects to the recipeView of the recipe clicked
     handleClick(recipe_id){
         console.log(recipe_id);
         let url= "/recipe/"+recipe_id;
@@ -56,7 +62,7 @@ export default class recipeList extends React.Component {
     }
 
     render() {
-
+        // We have a "temporal" view until the database retrieves the info.
         if (this.state.loaded === true) {
             return (
                 <div className="view myrecipes">

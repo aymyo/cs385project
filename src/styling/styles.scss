@@ -162,6 +162,13 @@
     box-shadow: none;
     border: 2px black solid ;
   }
+  .ingredient {
+    display: flex;
+  }
+  .delete {
+    font-size: 24px;
+    margin-left: auto;
+  }
   .btn-save {
     position: fixed;
     bottom: 20px;
