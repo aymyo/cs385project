@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d1bd8c30-7176-4f67-9eba-2230fd46b86a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/recipeCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/recipeCreate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/recipeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/recipeView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styling/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styling/styles.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +119,7 @@
       <workItem from="1575495169608" duration="1689000" />
       <workItem from="1575540472003" duration="1085000" />
       <workItem from="1576090604885" duration="2622000" />
-      <workItem from="1576193167908" duration="11719000" />
+      <workItem from="1576193167908" duration="11986000" />
     </task>
     <task id="LOCAL-00001" summary="initial setup">
       <created>1574685697584</created>
@@ -192,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576206943456</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="styling on loading recipe&#10;fix bug qty">
+      <created>1576207569539</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1576207569539</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +231,8 @@
     <MESSAGE value="Database working:&#10;- RecipeList working" />
     <MESSAGE value="Routing working,&#10;Database working,&#10;ViewRecipe Working,&#10;CreateRecipe Working," />
     <MESSAGE value="the biggest commit ever" />
-    <option name="LAST_COMMIT_MESSAGE" value="the biggest commit ever" />
+    <MESSAGE value="styling on loading recipe&#10;fix bug qty" />
+    <option name="LAST_COMMIT_MESSAGE" value="styling on loading recipe&#10;fix bug qty" />
   </component>
   <component name="WindowStateProjectService">
     <state x="296" y="0" key="CommitChangelistDialog2" timestamp="1575634954245">
