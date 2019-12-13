@@ -83,22 +83,41 @@ export default class recipeView extends React.Component {
             return(
                 <div className="view view-recipe">
                     <h3 className="title">LOADING</h3>
-                    <div className="ingredients">
-                        Ingredients:<br/>
-                        - Tomatoes<br/>
-                        - ...<br/><br/>
-                    </div>
-                    <div className="steps">
-                        Steps:<br/>
-                        1. Cook the pasta<br/>
-                        2. Add tomato sauce<br/><br/>
-                    </div>
+
                     <div className="picture">
-                        *picture*<br/><br/>
+
                     </div>
-                    <div className="NutritionInfo">
-                        Nutritional info of the whole recipe: <br/>
-                        Carbs, Fat, Calories...<br/><br/>
+
+                    <p>Ingredients:</p>
+                    <ul>
+                        <li>- Something (100g)</li>
+                        <li>- Something (100g)</li>
+                        <li>- Something (100g)</li>
+                    </ul>
+
+                    <p>Instructions:</p>
+                    <div className="instructions">
+                        1. Something something something
+                        2. Something something
+                        3. Something something...
+                    </div>
+
+                    <div className="api-item nutrition">
+                        <h3 className="food-title">Nutrition <b className="food-qty">(100 g)</b></h3>
+                        <div className="food-info">
+                            <div className="info-line">
+                                <p className="info-item"><b className="nutrient-name">Calories</b>
+                                    0 kcal</p>
+                                <p className="info-item"><b className="nutrient-name">Fat</b>
+                                     0 g</p>
+                            </div>
+                            <div className="info-line">
+                                <p className="info-item"><b className="nutrient-name">Carbs</b>
+                                    0 g</p>
+                                <p className="info-item"><b className="nutrient-name">Protein</b>
+                                    0 g</p>
+                            </div>
+                        </div>
                     </div>
 
                     <span className="btn btn-delete" onClick={this.deleteRecipe}>Delete</span>

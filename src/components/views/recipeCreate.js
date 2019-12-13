@@ -143,7 +143,7 @@ export default class recipeCreate extends React.Component {
                      carbs: acc.carbs + cv.carbs,
                      fat: acc.fat + cv.fat,
                      pro: acc.pro + cv.pro,
-                     qty: acc.qty + cv.qty,
+                     qty: (+acc.qty) + (+cv.qty),
                  };
 
              });
