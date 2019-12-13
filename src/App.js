@@ -3,7 +3,7 @@ import './styling/styles.scss';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Homepage from './components/views/homepage';
 import Header from './components/header';
-import myrecipesView from './components/views/myrecipesView';
+import recipeList from './components/views/recipeList';
 import recipeView from './components/views/recipeView';
 import help from './components/views/helpView';
 import recipeCreate from "./components/views/recipeCreate";
@@ -14,7 +14,7 @@ import ingredientView from "./components/views/ingredientView";
 
 class App extends React.Component {
     constructor(props) {
-        super();
+        super(props);
         firebase.initializeApp(fbconfig);
     }
 
@@ -24,7 +24,7 @@ class App extends React.Component {
                 <Header/>
                 <Switch>
                     <Route path="/" component={Homepage} exact />
-                    <Route path="/recipes" component={myrecipesView}/>
+                    <Route path="/recipes" component={recipeList}/>
                     <Route path="/recipe/:recipeID" component={recipeView}/>
                     <Route path="/ingredient/:ingrID" component={ingredientView}/>
                     <Route path="/create" component={recipeCreate}/>

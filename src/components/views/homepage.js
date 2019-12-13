@@ -10,7 +10,7 @@ export default class Homepage extends React.Component {
         return (
                 <div className="view home">
                     <h3 className="title"><b className="bold">Search</b> for <br/>ingredients</h3>
-                    <SearchBar/>
+                    <SearchBar callback={() => console.log("click")}/>
                 </div>
         );
     }

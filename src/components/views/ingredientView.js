@@ -21,7 +21,7 @@ export default class ingredientView extends React.Component {
             console.log(recipeData);
 
             this.setState({
-                recipe: recipeData,
+                recipeList: recipeData,
                 is_loaded: true,
             });
         }); // end of the on method

@@ -29,7 +29,12 @@ export default class recipeCreate extends React.Component {
         });
     }
 
+    componentWillUnmount() {
+        this._isMounted = false;
+    }
+
     componentDidMount() {
+        this._isMounted = true;
         let ref = firebase.database().ref('recipes').orderByChild('id');
         ref.on('value', (snapshot) => {
             let recipeData = snapshot.val();
@@ -59,16 +64,18 @@ export default class recipeCreate extends React.Component {
                 lastID = recipeList[recipeList.length-1].id;
             }
             // call the method to update state in App.js component.
-            this.setState({
-                lastID: lastID,
-            });
+            if(this._isMounted) {
+                this.setState({
+                    lastID: lastID,
+                });
+            }
         }); // end of the on method
     }
 
      saveRecipe = async () => {
         if( (this.state.recipeTitle !== '') &&
             (this.state.recipeInstructions !== '') &&
-            (this.state.recipeIngredients !== [])){
+            (this.state.recipeIngredients.length > 0)){
                 await firebase.database().ref('recipes/' + (this.state.lastID + 1)).set({
                     id: (this.state.lastID + 1),
                     title: this.state.recipeTitle,
@@ -99,7 +106,7 @@ export default class recipeCreate extends React.Component {
         console.log(ingredient);
         let newIngredientlist = this.state.recipeIngredients.concat(ingredient);
 
-        //Recalculates nutrition of the recipe
+        //Recalculates nutrition of the recipeList
         let recipeNutrition = newIngredientlist.reduce((acc,cv)=> {
             return acc ={
                 cal: acc.cal + cv.cal,
@@ -108,8 +115,7 @@ export default class recipeCreate extends React.Component {
                 pro: acc.pro + cv.pro,
                 qty: acc.qty + cv.qty,
             };
-
-        })
+        });
 
         recipeNutrition = {
             cal: round(recipeNutrition.cal,2),
@@ -135,7 +141,7 @@ export default class recipeCreate extends React.Component {
         });
         let recipeNutrition;
 
-         //Recalculates nutrition of the recipe
+         //Recalculates nutrition of the recipeList
          if(newIngredientlist.length > 1){
               recipeNutrition = newIngredientlist.reduce((acc,cv)=> {
                  return acc ={

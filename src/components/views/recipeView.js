@@ -9,22 +9,64 @@ export default class recipeView extends React.Component {
         super(props);
         this.state = {
             is_loaded: false,
+            message: 'Loading',
+        }
+    }
+    componentWillUnmount() {
+        this._isMounted = false;
+    }
+
+    componentDidMount() {
+        this._isMounted = true;
+        console.log(this.props.match.params.recipeID);
+        if(this.props.match.params.recipeID === "deleted"){
+            if(this._isMounted) {
+                this.setState({
+                        is_loaded: false,
+                        message: "Deleting...",
+                    }
+                )
+            }
+
+            let url= "/recipes";
+            this.props.history.push(url);
+        }else {
+            let path= "recipes/" + (this.props.match.params.recipeID);
+            let ref = firebase.database().ref(path);
+            ref.on('value', (snapshot) => {
+                let recipeData = snapshot.val();
+
+                console.log(recipeData);
+
+                if(Object.is(recipeData,null)){
+                    let url= "/404";
+                    this.props.history.push(url);
+                }else if(this._isMounted) {
+                    this.setState({
+                        recipe: recipeData,
+                        is_loaded: true,
+                    });
+                }
+            }); // end of the on method
         }
     }
 
-    async componentDidMount() {
+    deleteRecipe = async () => {
+
         let path= "recipes/" + (this.props.match.params.recipeID);
-        let ref = firebase.database().ref(path);
-        await ref.on('value', (snapshot) => {
-            let recipeData = snapshot.val();
+        firebase.database().ref(path).remove();
 
-            console.log(recipeData);
+        console.log("Recipe deleted");
 
-            this.setState({
-                recipe: recipeData,
-                is_loaded: true,
-            });
-        }); // end of the on method
+        this.setState({
+                is_loaded: false,
+                message: "Deleted",
+            }
+        )
+
+        let url= "/recipe/deleted";
+        this.props.history.push(url);
+
     }
 
     render() {
@@ -45,9 +87,9 @@ export default class recipeView extends React.Component {
 
                     <p>Ingredients:</p>
                     <ul>
-                        {this.state.recipe.ingredients.map((ingr) => {
+                        {this.state.recipe.ingredients.map((ingr,index) => {
                             return (
-                                <li key={ingr.label}>- {ingr.label} ({ingr.qty} g)</li>
+                                <li key={ingr.label+index}>- {ingr.label} ({ingr.qty} g)</li>
                             );
                         })
                         }
@@ -82,7 +124,11 @@ export default class recipeView extends React.Component {
         }else {
             return(
                 <div className="view view-recipe">
-                    <h3 className="title">LOADING</h3>
+                    <NavLink to='/recipes' className="header-left">
+                        <FontAwesomeIcon icon={faChevronLeft} className="h-left" ></FontAwesomeIcon>
+                    </NavLink>
+
+                    <h3 className="title">{this.state.message}</h3>
 
                     <div className="picture">
 
@@ -90,16 +136,16 @@ export default class recipeView extends React.Component {
 
                     <p>Ingredients:</p>
                     <ul>
-                        <li>- Something (100g)</li>
-                        <li>- Something (100g)</li>
-                        <li>- Something (100g)</li>
+                        <li>- {this.state.message} (100g)</li>
+                        <li>- {this.state.message} (100g)</li>
+                        <li>- {this.state.message} (100g)</li>
                     </ul>
 
                     <p>Instructions:</p>
                     <div className="instructions">
-                        1. Something something something
-                        2. Something something
-                        3. Something something...
+                        1. {this.state.message}<br/>
+                        2. {this.state.message}<br/>
+                        3. {this.state.message}...<br/>
                     </div>
 
                     <div className="api-item nutrition">
@@ -120,7 +166,6 @@ export default class recipeView extends React.Component {
                         </div>
                     </div>
 
-                    <span className="btn btn-delete" onClick={this.deleteRecipe}>Delete</span>
                 </div>
             )
         }
