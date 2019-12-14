@@ -7,6 +7,18 @@ $pink: rgba(250, 124, 146, 1);
 $gray: #c4c4c4;
 $light-gray: #dbdbdb;
 
+$color-gradient: linear-gradient(
+                to right,
+                $lightblue 0,
+                $lightblue 25%,
+                $aquamarine 25%,
+                $aquamarine 50%,
+                $yellow 50%,
+                $yellow 75%,
+                $pink 75%,
+                $pink 100%
+);
+
 $sans-serif:'Montserrat', sans-serif;
 
 $mobile: "max-width: 480px";

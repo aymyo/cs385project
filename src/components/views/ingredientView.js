@@ -1,9 +1,11 @@
+/* NOT USED
+
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChevronLeft} from "@fortawesome/free-solid-svg-icons";
 
-/* NOT USED
+
 export default class ingredientView extends React.Component {
     constructor(props){
         super(props);

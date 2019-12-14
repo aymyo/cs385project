@@ -11,8 +11,9 @@ export default class Homepage extends React.Component {
     render() {
         return (
                 <div className="view home">
-                    <h3 className="title"><b className="bold">Search</b> for <br/>ingredients</h3>
-                    <SearchBar callback={() => console.log("click")}/>
+                    <h3 className="title"><b className="bold">Search</b> for </h3>
+                    <h3 className="title line2">ingredients</h3>
+                    <SearchBar callback={() => console.log("click")} color={"blue"}/>
                 </div>
         );
     }

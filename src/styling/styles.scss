@@ -1,6 +1,7 @@
 @import "reset.scss";
 @import "vars.scss";
 
+//------------------------------------- General --------------------------------------
 #root {
   display: none;
   background: $light-gray;
@@ -19,7 +20,7 @@
 }
 
 .view {
-  padding: 28px 28px 64px 28px;
+  padding: 28px 28px 48px 28px;
   min-height: 100vh;
 }
 
@@ -32,102 +33,253 @@
   margin-top: 7vh;
 }
 
+//------------------------------------- Header --------------------------------------
+.header {
+  position: fixed;
+  height: calc(8vh - 4px);
+  top:0;
+  z-index: 4;
+  padding-bottom: 4px;
+  background: white;
+  width: 100vw;
+  .color-bar {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    min-height: 4px;
+    width: 100vw;
+    height: 3px;
+    background: $color-gradient;
+  }
+  .header-view {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 28px;
+    justify-content: space-between;
+    .h-toggle {
+      padding: 0 8px;
+      margin-right: -9px;
+      &:focus {
+        outline: none;
+      }
+      &:not(.collapsed) {
+        .my-toggler {color: $gray;}
+      }
+      .my-toggler {
+        color: black;
+        font-size: 24px;
+      }
+    }
+    .h-title {
+      font-size: 24px;
+      color: black;
+    }
+    .h-left {
+      width: 32px;
+    }
+  }
+  .header-navbar {
+    padding: 3px 0 0;
+    background: white;
+    width: 100vw;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    .h-links {
+      margin: 0;
+      .header-link {
+        padding: 8px 0;
+        border-top: 1px $light-gray solid;
+        .home-link {
+          font-size: 24px;
+          color: $lightblue;
+        }
+        .create-link {
+          font-size: 24px;
+          color: $aquamarine;
+        }
+        .recipes-link {
+          font-size: 24px;
+          color: $yellow;
+        }
+        .help-link {
+          font-size: 24px;
+          color: $pink;
+        }
+      }
+    }
+
+  }
+}
+
+.header-left {
+  position: fixed;
+  left: 28px;
+  top: 0;
+  display: flex;
+  height: calc(8vh - 4px);
+  padding-bottom: 3px;
+  align-items: center;
+  z-index: 10;
+  .h-left {
+    color: $yellow;
+    font-size: 24px;
+    margin: 0;
+  }
+}
+
+//------------------------------------- SearchBar --------------------------------------
+.search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 42px;
+  border-radius: 6px;
+  background: white;
+  padding: 0 8px;
+  &:hover, &:active {
+    border-bottom: solid 2px $aquamarine;
+    height: 44px;
+    margin-bottom: -2px;
+  }
+  &.blue {
+    &:hover, &:active {
+      border-bottom: solid 2px $lightblue;
+    }
+  }
+  input, input:hover, input:active {
+    border: none;
+    outline: none;
+  }
+  .search-input {
+    width: 60%;
+  }
+  .qty-input {
+    width: 20%;
+    margin-right: 1px;
+    padding-left: 4px;
+    border-left: 1px solid $gray;
+    &:hover, &:active {
+      border-left: 1px solid $gray;
+    }
+  }
+  .qty-label {
+
+  }
+  .search-click {
+    font-size: 32px;
+    margin-left: auto;
+    width: 24px;
+    height: 24px;
+    font-weight: 300;
+  }
+}
+.search-results {
+  margin-top: 12px;
+  text-align: justify;
+  display: flex;
+  height: 76vh;
+  overflow: scroll;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-items: center;
+}
+
+.api-item {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  width: calc(100%);
+  font-size:12px;
+  padding: 4px 8px;
+  .food-title {
+    padding: 0 0 4px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 2px;
+    border-bottom: 3px black solid;
+    font: bold 15px $sans-serif;
+    text-transform: capitalize;
+    .food-qty {
+      text-transform: none;
+      position: absolute;
+      right: 0;
+      background: white;
+      padding-left: 8px;
+    }
+  }
+  .food-info {
+    font: 13px $sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .info-line {
+      display: flex;
+      border-bottom: 1px black solid;
+      margin-bottom: 2px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .info-line:last-child {
+      border-bottom: none;
+    }
+    .info-item {
+      display: flex;
+      text-align: justify;
+      width: 48%;
+      margin-bottom: 0;
+    }
+    .nutrient-name {
+      font-weight: bold;
+      margin-right: auto;
+    }
+  }
+}
+
+//---------------------------------------- Home ----------------------------------------
 .home {
   display: flex;
   align-items: center;
   flex-direction: column;
   .title {
-    margin-bottom: 48px;
     font: $sans-serif;
+    background: $lightblue;
     text-align: center;
     font-size: 42px;
-    margin-top: 25vh;
-  }
-}
-
-.myrecipes {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  .title {
-    margin-bottom: 8px;
-    font: $sans-serif;
-    font-weight: bold;
-    text-align: center;
-    font-size: 32px;
-    margin-top: 7vh;
-  }
-}
-.recipe-preview {
-  display: flex;
-  flex-direction: column;
-  min-width: 100%;
-  width: 100%;
-  .recipe-pic {
-    z-index: 2;
-    position: relative;
-    width: 100%;
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
-    border: 1px solid white;
-    height: 128px;
-    .image {
-      z-index: 0;
-      width: 100%;
-      height: 100%;
-      border-top-right-radius: 12px;
-      border-top-left-radius: 12px;
-    }
-    .icon {
-      font-size: 48px;
-      color: $gray;
-      z-index: -10;
-      position: absolute;
-      left: calc(50% - 20px);
-      top: calc(50% - 20px);
-    }
-  }
-  div.api-item {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
-}
-
-.view-recipe {
-  p {
-    font-weight: bold;
-    margin-bottom: 2px;
-  }
-  .instructions {
-    white-space: pre-line;
-
-  }
-  .nutrition {
-    margin-top: 16px;
-    border-radius: 0;
-    box-shadow: none;
-    p {
-      font-weight: normal;
-    }
-    border: 2px black solid ;
-  }
-  .btn-delete {
-    width: 128px;
-    border-radius: 12px;
-    font-weight: bold;
-    background: black;
-    margin-top: 12px;
-    color: white;
-    border: none;
-    &:active, &:hover {
-      background: $pink;
-      color: black;
+    margin: 25vh 0 12px 0;
+    &.line2 {
+      margin: 0 0 48px 0;
     }
   }
 }
 
+//---------------------------------------- recipeCreate ----------------------------------------
 .create-recipe {
   padding-bottom: 44px;
+  .title {
+    background: $aquamarine;
+    display: inline-block;
+  }
   textarea.form-control {
     min-height: 100px;
     padding-top: 8px;
@@ -203,209 +355,164 @@
   }
 }
 
-.header {
-  position: fixed;
-  height: 8vh;
-  top:0;
-  z-index: 4;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-  background: white;
-  width: 100vw;
-  .header-view {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 0 28px;
-    justify-content: space-between;
-    .h-toggle {
-      color: black;
-      padding: 0;
-      margin-right: -4px;
-      .my-toggler {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-      }
-    }
-    .h-title {
-      font-size: 24px;
-    }
-    .h-left {
-      width: 32px;
-    }
-  }
-  .header-navbar {
-    padding: 0;
-    background: white;
-    width: 100vw;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-    .h-links {
-      margin: 0;
-      .header-link {
-        padding: 8px 0;
-        border-top: 1px $light-gray solid;
-        .home-link,.create-link,.recipes-link,.help-link {
-          font-size: 24px;
-          color: black;
-        }
-      }
-    }
-
-  }
-}
-
-
-.header-left {
-  position: fixed;
-  left: 28px;
-  top: 0;
+//---------------------------------------- recipeList ----------------------------------------
+.recipe-list {
   display: flex;
-  height: 8vh;
-  align-items: center;
-  z-index: 10;
-  .h-left {
-    color: black;
-    font-size: 24px;
-    margin: 0;
-  }
-}
-
-
-.search-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.search-bar {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  height: 42px;
-  border-radius: 6px;
-  background: white;
-  padding: 0 8px;
-  &:hover, &:active {
-    border-bottom: solid 2px $aquamarine;
-    height: 44px;
-    margin-bottom: -2px;
-  }
-  input, input:hover, input:active {
-    border: none;
-    outline: none;
-  }
-  .search-input {
-    width: 60%;
-  }
-  .qty-input {
-    width: 20%;
-    margin-right: 1px;
-    padding-left: 4px;
-    border-left: 1px solid $gray;
-    &:hover, &:active {
-      border-left: 1px solid $gray;
-    }
-  }
-  .qty-label {
-
-  }
-  .search-click {
-    font-size: 32px;
-    margin-left: auto;
-    width: 24px;
-    height: 24px;
-    font-weight: 300;
-  }
-}
-
-.errorpage{
-  .image {
-    width: 100px;
-  }
-}
-
-.help{
-  .img-container{
-    background-color: whitesmoke;
-    border-radius: 5%;
-  }
-  .image{
-    margin-left: 4px;
-    width: 150px;
-    padding: 2%;
-  }
-}
-
-.search-results {
-  margin-top: 12px;
-  text-align: justify;
-  display: flex;
-  height: 76vh;
-  overflow: scroll;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  justify-items: center;
-}
-
-.api-item {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
-  background: white;
-  border-radius: 12px;
-  margin-bottom: 8px;
-  width: calc(100%);
-  font-size:12px;
-  padding: 4px 8px;
-  .food-title {
-    padding: 0 0 4px;
+  flex-direction: column;
+  .title {
+    margin-bottom: 8px;
+    margin-top: 7vh;
+    padding: 0 4px 0 0;
+    display: inline-block;
+    background: $yellow;
+  }
+  .icon-recognition {
+    margin-top: 32px;
+    font-size: 8px;
+  }
+}
+.recipe-preview {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  width: 100%;
+  .recipe-pic {
+    z-index: 2;
     position: relative;
-    white-space: nowrap;
-    overflow: hidden;
     width: 100%;
-    margin-bottom: 2px;
-    border-bottom: 3px black solid;
-    font: bold 15px $sans-serif;
-    text-transform: capitalize;
-    .food-qty {
-      text-transform: none;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border: 1px solid white;
+    background: white;
+    height: 128px;
+    .image {
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      border-top-right-radius: 12px;
+      border-top-left-radius: 12px;
+    }
+    .icon {
+      font-size: 48px;
+      color: $gray;
+      z-index: -10;
       position: absolute;
-      right: 0;
-      background: white;
-      padding-left: 8px;
+      left: calc(50% - 20px);
+      top: calc(50% - 20px);
     }
   }
-  .food-info {
-    font: 13px $sans-serif;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .info-line {
-      display: flex;
-      border-bottom: 1px black solid;
-      margin-bottom: 2px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
+  div.api-item {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+//---------------------------------------- recipeView ----------------------------------------
+.view-recipe {
+  .title {
+    padding: 0 4px 0 0;
+    background: $yellow;
+    display: inline-block;
+  }
+  p {
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  .instructions {
+    white-space: pre-line;
+
+  }
+  .nutrition {
+    margin-top: 16px;
+    border-radius: 0;
+    box-shadow: none;
+    p {
+      font-weight: normal;
     }
-    .info-line:last-child {
-      border-bottom: none;
-    }
-    .info-item {
-      display: flex;
-      text-align: justify;
-      width: 48%;
-      margin-bottom: 0;
-    }
-    .nutrient-name {
-      font-weight: bold;
-      margin-right: auto;
+    border: 2px black solid ;
+  }
+  .btn-delete {
+    width: 128px;
+    border-radius: 12px;
+    font-weight: bold;
+    background: black;
+    margin-top: 12px;
+    color: white;
+    border: none;
+    &:active, &:hover {
+      background: $pink;
+      color: black;
     }
   }
 }
+
+//---------------------------------------- Help and 404 ----------------------------------------
+.help {
+  .title {
+    display: inline-block;
+    padding: 0 4px 0 0;
+    background: $pink;
+  }
+  .img-container {
+    background-color: ghostwhite;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+  }
+  .image {
+    width: 150px;
+  }
+  .createRecipe {
+    svg {
+      color: black;
+      background: $aquamarine;
+      font-size: 22px;
+      padding: 2px;
+    }
+  }
+  .listRecipes {
+    svg {
+      color: black;
+      background: $yellow;
+      font-size: 24px;
+      padding: 2px 4px;
+    }
+  }
+  p {
+    text-align: justify;
+  }
+  svg {
+    margin-left: 3px;
+  }
+}
+
+.errorpage {
+  .title {
+    display: inline-block;
+    padding: 0 4px 0 0;
+    background: $pink;
+  }
+  .bold {
+    font: bold 20px $sans-serif;
+  }
+  .img-container {
+    display: flex;
+    p {
+      font: normal 20px $sans-serif;
+    }
+  }
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+  .image {
+    min-width: 120px;
+    min-height: 192px;
+    height: 192px;
+    margin: 0 24px 0 0;
+  }
+}
+
 

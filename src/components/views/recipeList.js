@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
-import image from '../../images/speghetti.jpg';
+import image from '../../images/recipe.svg';
 import firebase from "firebase";
 
 /* This component is displayed whenever the user goes to the path "/recipes"
@@ -65,7 +65,7 @@ export default class recipeList extends React.Component {
         // We have a "temporal" view until the database retrieves the info.
         if (this.state.loaded === true) {
             return (
-                <div className="view myrecipes">
+                <div className="view recipe-list">
                     <h3 className="title">My recipes</h3>
 
                     <div className="search-results">
@@ -100,7 +100,14 @@ export default class recipeList extends React.Component {
                             );
                         })}
                     </div>
+
+                    <div className="icon-recognition">Icon designed by
+                        <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a>
+                        from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
+                    </div>
                 </div>
+
+
             );
         }else {
             return (

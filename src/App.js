@@ -10,7 +10,7 @@ import recipeCreate from "./components/views/recipeCreate";
 import error from "./components/views/errorView";
 import firebase from "firebase/app";
 import fbconfig from "./firebase";
-import ingredientView from "./components/views/ingredientView";
+//import ingredientView from "./components/views/ingredientView";
 
 class App extends React.Component {
     constructor(props) {

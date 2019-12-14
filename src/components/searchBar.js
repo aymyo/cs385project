@@ -42,7 +42,7 @@ export default class searchBar extends React.Component {
     render() {
         return (
             <div className="search-container">
-            <div className="search-bar">
+            <div className={"search-bar " + this.props.color}>
                 <input placeholder="Search..." className="search-input" id="searchTerm"
                    onKeyPress={this.keyPressed} onChange={this.handleChange}/>
                 <input className="qty-input" id="qtyGrams" type="number" step="10" min="0" placeholder="100"

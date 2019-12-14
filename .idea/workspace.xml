@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1bd8c30-7176-4f67-9eba-2230fd46b86a" name="Default Changelist" comment="images added in helpView.js">
-      <change afterPath="$PROJECT_DIR$/src/images/createRecView.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/createRecView1.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/homepage.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/homepage1.JPG" afterDir="false" />
+    <list default="true" id="d1bd8c30-7176-4f67-9eba-2230fd46b86a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/images/create1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/create2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/home1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/home2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/recipe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/view1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/view2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ayman.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ayman.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/searchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/views/errorView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/errorView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/views/helpView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/helpView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/spaghetti.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/views/homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/homepage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/views/ingredientView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/ingredientView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/views/recipeList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/recipeList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/createRecView.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/createRecView1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/homepage.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/homepage1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/speghetti.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styling/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styling/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styling/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styling/vars.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,14 +78,14 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ana\PhpstormProjects\cs385project\src\images" />
+      <recent name="C:\Users\ayman\PhpstormProjects\cs385project\src\styling" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ana\PhpstormProjects\cs385project\src\images" />
       <recent name="C:\Users\ayman\PhpstormProjects\cs385project" />
       <recent name="C:\Users\ayman\PhpstormProjects\cs385project\src\images" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Ana\PhpstormProjects\cs385project\src\images" />
-      <recent name="C:\Users\ayman\PhpstormProjects\cs385project\src\styling" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -80,6 +96,18 @@
       <command value="npm install node-sass" />
       <command value="npm install -save bootstrap" />
       <command value="npm install firebase" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
     </option>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -96,18 +124,6 @@
       <envs />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />

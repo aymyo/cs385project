@@ -1,10 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome } from '@fortawesome/free-solid-svg-icons'
-import { faUtensilSpoon } from '@fortawesome/free-solid-svg-icons'
-import { faBook } from '@fortawesome/free-solid-svg-icons'
-import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUtensilSpoon, faBars, faBook, faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
 
 /* This component is displayed always on the top of the screen
 * It shows the header menu, with the App name, and the toggle menu button. The user can click it to unfold the menu
@@ -16,13 +13,15 @@ export default class Header extends React.Component {
             <header className="header">
                 <div className="header-view">
                     <span className="h-left" ></span>
-                    <span className="h-title"><b>Nutri</b>meal</span>
-                    <button className="navbar-toggler h-toggle" type="button" data-toggle="collapse"
+                    <span className="h-title"><b className="title-bold">Nutri</b>meal</span>
+                    <button className="navbar-toggler h-toggle collapsed" type="button" data-toggle="collapse"
                             data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                             aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon my-toggler"></span>
+                        <FontAwesomeIcon className="navbar-toggler-icon my-toggler" icon={faBars}/>
                     </button>
                 </div>
+
+                <div className="color-bar"></div>
 
                 <div className="col-sm-3 text-center header-navbar" id="dropdown">
                     <div className="collapse" id="navbarToggleExternalContent">
@@ -43,7 +42,6 @@ export default class Header extends React.Component {
                                   data-target="#navbarToggleExternalContent">
                                 <NavLink to='/help'><FontAwesomeIcon icon={faQuestionCircle} className="help-link" ></FontAwesomeIcon></NavLink>
                             </span>
-
                         </nav>
                     </div>
                 </div>
