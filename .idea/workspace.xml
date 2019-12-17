@@ -1,32 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1bd8c30-7176-4f67-9eba-2230fd46b86a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/images/create1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/create2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/home1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/home2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/recipe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/view1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/view2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ayman.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ayman.xml" afterDir="false" />
+    <list default="true" id="d1bd8c30-7176-4f67-9eba-2230fd46b86a" name="Default Changelist" comment="final polishing, adding colors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/searchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/searchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/errorView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/errorView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/helpView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/helpView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/homepage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/ingredientView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/ingredientView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/views/recipeList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/views/recipeList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/createRecView.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/createRecView1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/homepage.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/homepage1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/speghetti.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styling/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styling/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styling/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styling/vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,14 +60,15 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Ana\PhpstormProjects\cs385project\src\images" />
-      <recent name="C:\Users\ayman\PhpstormProjects\cs385project\src\styling" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ana\PhpstormProjects\cs385project\src\images" />
       <recent name="C:\Users\ayman\PhpstormProjects\cs385project" />
       <recent name="C:\Users\ayman\PhpstormProjects\cs385project\src\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ayman\PhpstormProjects\cs385project\src\images" />
+      <recent name="C:\Users\Ana\PhpstormProjects\cs385project\src\images" />
+      <recent name="C:\Users\ayman\PhpstormProjects\cs385project\src\styling" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -145,6 +128,11 @@
       <workItem from="1576090604885" duration="2622000" />
       <workItem from="1576193167908" duration="11986000" />
       <workItem from="1576233571019" duration="11917000" />
+      <workItem from="1576349286196" duration="202000" />
+      <workItem from="1576438221531" duration="241000" />
+      <workItem from="1576498812852" duration="25000" />
+      <workItem from="1576541425162" duration="518000" />
+      <workItem from="1576614911022" duration="677000" />
     </task>
     <task id="LOCAL-00001" summary="initial setup">
       <created>1574685697584</created>
@@ -251,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576243859601</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="final polishing, adding colors">
+      <created>1576338289300</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1576338289300</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +283,8 @@
     <MESSAGE value="Delete recipe" />
     <MESSAGE value="bug fixed: create recipe delete items" />
     <MESSAGE value="comments added" />
-    <option name="LAST_COMMIT_MESSAGE" value="comments added" />
+    <MESSAGE value="final polishing, adding colors" />
+    <option name="LAST_COMMIT_MESSAGE" value="final polishing, adding colors" />
   </component>
   <component name="WindowStateProjectService">
     <state x="296" y="0" key="CommitChangelistDialog2" timestamp="1576255899008">
